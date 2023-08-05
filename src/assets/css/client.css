@@ -1,0 +1,118 @@
+body {
+    background-color: white;
+}
+
+.container {
+    width: 70%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.kanban-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.kanban-heading-text {
+    font-size: 1.8rem;
+    background-color: #F8069C;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+.kanban-block,
+.create-new-task-block {
+    padding: 0.6rem;
+    width: 30.5%;
+    min-width: 14rem;
+    min-height: 4.5rem;
+    border-radius: 0.3rem;
+}
+
+#todo {
+    background-color: #fec6d1;
+}
+
+#inprogress {
+    background-color: #ffaf00;
+    /* display: none; */
+}
+
+#done {
+    background-color: #018b01;
+    /* display: none; */
+}
+
+.task {
+    background-color: white;
+    margin: 0.2rem 0rem 0.3rem 0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.2rem 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.task .desc {
+    display: none;
+}
+
+#task-button {
+    margin: 0.2rem 0rem 0.1rem 0rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 100%;
+    border: 0.25rem solid black;
+    padding: 0.5rem 2.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.task.show-more .desc {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-form input,
+.add-form select {
+    border: 1px solid gray;
+    padding: 10px 5px;
+    width: 200px;
+}
+
+.add-form button {
+    border: 1px solid rgb(76, 76, 214);
+    background-color: rgb(76, 76, 214);
+    color: white;
+    padding: 10px 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#logout {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: 10px 5px;
+    width: 100px;
+    cursor: pointer;
+    height: 50px;
+}
